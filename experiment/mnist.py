@@ -13,6 +13,7 @@ from lib.net.rnn import RNNClassification
 from lib.dataflow.mnist import MNIST
 from lib.helper.train import Train
 from lib.model.deep.stack import StackedRNN
+from lib.model.deep.densrnn import DenseRNN
 
 
 class Config(object):
@@ -21,7 +22,7 @@ class Config(object):
     n_step = 28
     n_feature = 28
 
-    hidden_size_list = [10]
+    hidden_size_list = [10, 10]
     max_grad_norm = 5
     keep_prob = 1
     lr = 0.001
